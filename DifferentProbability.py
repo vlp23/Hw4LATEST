@@ -30,10 +30,10 @@ class Game(object):
                 self._number_tails = 1
 
         elif self._currentSide == coin.heads:
-            if self._rnd.random_sample() > .5:
+            if self._rnd.random_sample() > .4:
                 self._currentSide = coin.TAILS
                 self._number_tails=1
-            if self._rnd.random_sample() < .5:
+            if self._rnd.random_sample() < .4:
                 if self._number_tails >= 2:
                     self._wins +=1
                     self._currentSide = coin.HEADS
